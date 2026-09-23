@@ -20,4 +20,29 @@ O sistema é dividido em duas abas principais voltadas à prática e estudo:
 
 ### 1. Clonar o repositório ou acessar a pasta
 ```bash
+git clone https://github.com/Juliojuliano/assistente-idiomas-ia.git
 cd assistente-idiomas-ia
+```
+
+### 2. Instalar as dependências
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configurar a chave de API do Gemini
+O app usa a biblioteca `google-genai`, que lê a chave automaticamente da variável de ambiente `GEMINI_API_KEY`. Crie uma chave gratuita em [Google AI Studio](https://aistudio.google.com/app/apikey) e defina a variável antes de rodar:
+
+```bash
+# Linux/macOS
+export GEMINI_API_KEY="sua-chave-aqui"
+
+# Windows (PowerShell)
+$env:GEMINI_API_KEY="sua-chave-aqui"
+```
+
+### 4. Rodar o aplicativo
+```bash
+streamlit run app_idiomas.py
+```
+
+O app abrirá automaticamente no navegador em `http://localhost:8501`.

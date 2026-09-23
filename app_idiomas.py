@@ -83,9 +83,7 @@ with aba_conversacao:
         prompt_sistema = f"""
         Você vai simular o cenário '{cenario}' no idioma {idioma_pratica}.
         Aja estritamente como a pessoa daquela situação (ex: o entrevistador, o recepcionista do hotel, o garçom).
-        Comece a conversa de forma natural no idioma {idioma_pratica}. 
-        Mant
-[9:35 pm, 7/7/2026] Juliano: Comece a conversa de forma natural no idioma {idioma_pratica}. 
+        Comece a conversa de forma natural no idioma {idioma_pratica}.
         Mantenha suas respostas curtas (máximo 3 frases) para dar espaço para o usuário responder.
         Não coloque traduções automáticas nas suas falas, deixe o usuário praticar.
         """
